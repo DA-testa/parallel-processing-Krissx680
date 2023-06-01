@@ -16,7 +16,7 @@ def parallel_processing(n, m, data): #Define 3 parametrus n thread skaits m darb
 def main():
    
     n, m = map(int, input().split()) #split atlauj inputot vairkas vertibas
-    data = list(map(int, input().split()))
+    data = list(map(int, input().split())) # izlasa darba procesu laiku un saglaba tos list(saraksta)
 
   
     result = parallel_processing(n, m, data) #izsauc parallel proccessing funkciju un saglaba to result 
