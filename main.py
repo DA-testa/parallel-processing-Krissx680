@@ -8,7 +8,7 @@ def parallel_processing(n, m, data): #Define 3 parametrus n thread skaits m darb
     for i in range(m):
         t = data[i]
         completion_time, thread_idx = heapq.heappop(threads) #panem mazako vertibu no heap nemainot rindas kartibu
-        output.append((thread_idx, completion_time)) #
+        output.append((thread_idx, completion_time)) #pievieno output sarakstam threadu indeksu un laiku kad darbs tika uzsakts
         heapq.heappush(threads, (completion_time + t, thread_idx)) #pusho jaunako vertibu heapa
     
     return output #atgriez output sarakstu ar threada indexiem un saksanas laiku 
